@@ -1,0 +1,41 @@
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border-color:grey;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.side-bar{
+    flex-grow: 1;
+}
+
+.sign-up-sheet {
+    flex-grow: 2;
+}
+
+.sign-up-sheet {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    display: block;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
