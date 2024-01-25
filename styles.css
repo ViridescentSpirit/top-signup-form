@@ -1,3 +1,8 @@
+html {
+    margin: -10px;
+    height: 100%;
+}
+
 input {
     padding: 5px;
     border-radius: 5px;
@@ -10,18 +15,57 @@ input {
     align-items: flex-start;
 }
 
-.side-bar{
+.side-bar {
     flex-grow: 1;
+    background-image: url("gustavo-zambelli-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.sign-up-sheet {
-    flex-grow: 2;
+.side-bar-footer {
+    color: white;
+    margin-bottom: 10px;
 }
 
 .sign-up-sheet {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     gap: 5px;
+    flex-grow: 2;
+}
+
+.sign-up-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 45vh;
+}
+
+.sign-up-header, .sign-up-footer {
+    background-color: blue;
+}
+
+.sign-up-header, .sign-up-form, .sign-up-footer {
+    flex-grow: 1;
+    max-width: 75vw;
+    position: relative;
+}
+
+h1, h2, form {
+    margin-left: 30px;
+}
+
+h1 {
+    width: 66%;
 }
 
 form {
@@ -32,6 +76,9 @@ form {
 
 input {
     display: block;
+    width: 300px;
+    min-width: 0px;
+    flex-basis: 0;
 }
 
 .form-row {
