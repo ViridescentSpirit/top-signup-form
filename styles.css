@@ -1,12 +1,15 @@
-html {
-    margin: -10px;
+html, body {
+    margin: 0px;
     height: 100%;
+    width: 100%;
 }
 
 input {
     padding: 5px;
     border-radius: 5px;
     border-color:grey;
+    display: block;
+    width: 100%;
 }
 
 .page {
@@ -54,8 +57,15 @@ input {
     background-color: blue;
 }
 
+.sign-up-form {
+    background-color: pink;
+    align-self: stretch;
+    padding: 10px 0px;
+    margin-top: -10px;
+}
+
 .sign-up-header, .sign-up-form, .sign-up-footer {
-    flex-grow: 1;
+    flex-basis: 1;
     max-width: 75vw;
     position: relative;
 }
@@ -65,7 +75,7 @@ h1, h2, form {
 }
 
 h1 {
-    width: 66%;
+    width: 75%;
 }
 
 form {
@@ -74,15 +84,13 @@ form {
     gap: 5px;
 }
 
-input {
-    display: block;
-    width: 300px;
-    min-width: 0px;
-    flex-basis: 0;
+label {
+    width: 25%;
 }
 
 .form-row {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
+    background-color: green;
 }
