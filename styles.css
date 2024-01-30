@@ -6,6 +6,7 @@ html, body {
 }
 
 input {
+    -webkit-appearance: none;
     appearance: none;
     padding: 5px;
     border: 1px solid lightgrey;
@@ -16,6 +17,11 @@ input {
 
 input:invalid {
     border: 2px solid red;
+}
+
+input:focus {
+    outline: none;
+    border: 2px dashed pink;
 }
 
 .page {
@@ -46,17 +52,20 @@ input:invalid {
     background-color: rgba(0,0,0,0.1);
     align-self: stretch;
     margin-top: 30%;
-    padding: -10px;
 }
 
 #odin-logo {
     width: 20%;
     height: auto;
+    margin: 10px;
+    min-height: 100px;
+    min-width: 75px;
 }
 
 p {
     color: white;
     font-size: 72px;
+    margin: 0px;
 }
 
 .side-bar-footer {
@@ -71,6 +80,7 @@ p {
     justify-content: center;
     gap: 0px;
     flex-grow: 2;
+    height: 100vh;
 }
 
 .sign-up-header {
@@ -136,6 +146,7 @@ button {
     width: 20%;
     min-width: 200px;
     height: 10%;
+    min-height: 2em;
     font-size: 20px;
     font-weight: bold;
 }
