@@ -21,7 +21,8 @@ input:invalid {
 
 input:focus {
     outline: none;
-    border: 2px dashed pink;
+    border: 2px dashed peachpuff;
+    box-shadow: 0px 3px 10px black;
 }
 
 .page {
@@ -153,4 +154,8 @@ button {
 
 a {
     color: rgba(253,218,176,255);
+}
+
+span {
+    margin-top: 100px;
 }

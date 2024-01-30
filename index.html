@@ -4,6 +4,7 @@
         <title>Sign Up!</title>
         <meta charset="utf-8">
         <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="page">
@@ -53,12 +54,15 @@
                             <label for="">PASSWORD
                                 <input type="password" 
                                     name="password" 
-                                    id="password" />
+                                    id="password"
+                                    onkeyup = 'check();' />
+                                    <span id="conf-message"></span>
                             </label>
                             <label for="">CONFIRM PASSWORD
                                 <input type="password" 
                                     name="confirm-pass" 
-                                    id="confirm-pass" />
+                                    id="confirm-pass"
+                                    onkeyup = 'check();' />
                             </label>
                         </div>
                     </form>
